@@ -1,12 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Portfolio</title>
+	<meta charset="utf-8">
+	<title>200일 기념일</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f8f8f8;
+		}
+		.container {
+			margin: 0 auto;
+			padding: 20px;
+			max-width: 800px;
+		}
+		h1 {
+			text-align: center;
+			font-size: 36px;
+			color: #333;
+			margin-bottom: 20px;
+		}
+		img {
+			max-width: 100%;
+			height: auto;
+			margin-bottom: 20px;
+		}
+		.event {
+			margin-top: 50px;
+			text-align: center;
+		}
+		.button {
+			display: inline-block;
+			padding: 10px 20px;
+			background-color: #333;
+			color: #fff;
+			border-radius: 5px;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+		}
+		.button:hover {
+			background-color: #555;
+		}
+		.hidden {
+			display: none;
+		}
+	</style>
 </head>
 <body>
-  <p>Hello, World!</p>
+	<div class="container">
+		<h1>200일 기념일</h1>
+		<img src="이미지1.jpg">
+		<p>사진 설명 1</p>
+		<img src="이미지2.jpg">
+		<p>사진 설명 2</p>
+		<p>편지 내용</p>
+		<div class="event">
+			<h2>사다리타기 이벤트</h2>
+			<p>이벤트 설명</p>
+			<button class="button">시작하기</button>
+			<div class="hidden">
+				<p>이벤트 내용</p>
+			</div>
+		</div>
+	</div>
+	<script>
+		const button = document.querySelector('.button');
+		const hidden = document.querySelector('.hidden');
+		button.addEventListener('click', () => {
+			hidden.style.display = 'block';
+		});
+	</script>
 </body>
 </html>
